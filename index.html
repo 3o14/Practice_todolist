@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="top">
+            <div class="title">TO DO LIST</div>
+        </section>
+
+        <section class="main"> 
+            <div class="todolist">
+                <ul class="list" id="list">
+                    <li class="list-item">
+                        <p class="check N" id="check" onClick="checked(this.id)">✔️</p>
+                        <input class="item" id="item1" onkeyup="enterkey()" type="text" placeholder=" 새로운 할 일" name="todo" autofocus="true">
+                        </input>
+                        <!-- <hr class="redLine" id="redLine"> -->
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="plusSection" onClick="addItem()">
+            <div class="plus">+</div>
+        </section>
+
+    </div>
+    <script type="text/JavaScript" src="Todo.js"></script>
+</body>
+</html>
+

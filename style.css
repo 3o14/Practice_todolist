@@ -1,0 +1,135 @@
+.container {
+	width: 90%;
+    max-width: 450px;
+    max-height: 1200px;
+    margin: 0 auto;
+    display: grid;
+    background-color: #C3C3C3;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.top {
+    background-color: #747474;
+}
+
+.main {
+    overflow-y: auto;
+    height: 500px;
+}
+
+.title {
+    /* font-family: "Header 1"; */
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px 2px #5E5D5E;
+    color: #EBEBEB;
+    max-height: 450px;
+    margin: 4%;
+}
+
+.main {
+    min-height: 400px;
+}
+
+.list {
+    color: #010000;
+    list-style: none;
+    padding: 0% 1% 0% 4%;
+    width: 90%;
+    /* 시계방향 상 우 하 좌 */
+}
+
+.list-itme {
+    position: relative;
+    text-align: center;
+    height: 40px;
+}
+
+.item {
+    background-color: #EBEBEB;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    margin-right: 0px;
+    margin-top: 10px;
+    padding-left: 10px;
+    max-width: 95%;
+    width: 82%;
+    height: 70px;
+    box-shadow: 0px 3px 4px #939393;
+    font-size: 160%;
+    text-align: left;
+    color: #4A4A4A;
+
+    line-height: 3;
+}
+
+#item1 {
+    position: relative;
+    right: 4px;
+}
+
+
+.redLine {
+    position: relative;
+    top: 55px;
+    border: solid 3px;
+    color: #c90812;
+    width: 365px;
+    z-index: 1;
+    /* display: none; */
+}
+
+.check {
+    display: inline;
+    background-color: darkgrey;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 8px;
+    /* transition: transform 200ms ease; */
+}
+
+.check:hover {
+    /* transform: translate(4px); */
+    background: rgb(145, 145, 145);
+}
+
+.plusSection {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #EBEBEB;
+    width: 150px;
+    height: 55px;
+    text-align: center;
+    box-shadow: 0px 3px 4px #939393;
+    border-radius: 15px;
+}
+
+.plus {
+    margin: 0 auto;
+    font-size: 250%;
+    font-weight: bold;
+    color: #4A4A4A;
+    
+    line-height: 1.5;
+}
+
+hr {
+    display: inline;
+    width: 100px;
+}
+
+input {
+    font: #4A4A4A;
+    caret-color: darkgrey;
+}
+
+input:focus {
+    outline: none;
+}

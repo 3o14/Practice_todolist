@@ -14,11 +14,12 @@ function enterkey() {
         newListItem.setAttribute("class","list-item");
         list.appendChild(newListItem);
 
-        let check = document.createElement("p");
+        let check = document.createElement("img");
+        check.setAttribute("src", "./iconCheck.png");
+        check.setAttribute("alt", "iconCheck");
         check.setAttribute("id", `check${num}`);
         check.setAttribute("class", "check N");
         check.setAttribute("onClick", "checked(this.id)");
-        check.innerHTML="✔️";
         newListItem.appendChild(check);
 
         let newInput = document.createElement("input");
@@ -45,11 +46,12 @@ function addItem() {
     newListItem.setAttribute("class","list-item");
     list.appendChild(newListItem);
 
-    let check = document.createElement("p");
+    let check = document.createElement("img");
+    check.setAttribute("src", "./iconCheck.png");
+    check.setAttribute("alt", "iconCheck");
     check.setAttribute("id", `check${num}`);
     check.setAttribute("class", "check N");
     check.setAttribute("onClick", "checked(this.id)");
-    check.innerHTML="✔️";
     newListItem.appendChild(check);
 
     let newInput = document.createElement("input");
